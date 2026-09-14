@@ -1,0 +1,74 @@
+﻿Título da Task,Descrição,Módulo,Frente
+Criar tela de Login,"Desenvolver interface de autenticação com campos de e-mail/usuário e senha, mensagens de erro e estados de carregamento.",Acesso e Usuários,Front
+Criar tela de Primeiro Acesso,"Desenvolver fluxo para primeiro acesso do usuário, incluindo definição/alteração de senha conforme regra definida.",Acesso e Usuários,Front
+Criar tela de Recuperação de Acesso,Desenvolver interface para solicitação de recuperação de acesso.,Acesso e Usuários,Front
+Criar tela de Perfil,Permitir visualização e edição dos dados do usuário autenticado.,Acesso e Usuários,Front
+Implementar autenticação,"Criar regras de login, sessão/token e controle de acesso.",Acesso e Usuários,Back
+Implementar recuperação de acesso,Criar regras para recuperação e redefinição de credenciais.,Acesso e Usuários,Back
+Implementar controle de permissões,Diferenciar permissões de Coletor e Admin nas operações do sistema.,Acesso e Usuários,Back
+Criar estrutura de usuários,Modelar entidade de usuários e seus respectivos dados e permissões.,Acesso e Usuários,Back
+Integrar Login com API,Conectar formulário de login ao serviço de autenticação e tratar respostas da API.,Acesso e Usuários,Integração
+Integrar Perfil com API,Conectar visualização/edição do perfil aos dados persistidos no backend.,Acesso e Usuários,Integração
+Criar tela de Amostras,"Exibir amostras existentes, status e ações disponíveis para o usuário.",Amostras e Parcelas,Front
+Criar tela Criar/Editar Amostra,Desenvolver formulário para criação e edição dos dados de uma amostra.,Amostras e Parcelas,Front
+Criar tela Detalhe da Amostra,"Exibir informações da amostra, parcelas vinculadas, status e ações de processamento/finalização.",Amostras e Parcelas,Front
+Criar tela de Parcela/Coleta,"Desenvolver interface central da coleta, mostrando a parcela atual e suas árvores.",Amostras e Parcelas,Front
+Criar estrutura de Amostras,"Modelar entidade de amostra, status, informações cadastrais e relacionamento com usuário/parcelas.",Amostras e Parcelas,Back
+Criar estrutura de Parcelas,Modelar entidade de parcela e seu relacionamento com uma amostra.,Amostras e Parcelas,Back
+Implementar CRUD de Amostras,"Criar operações para criar, consultar, editar e finalizar amostras.",Amostras e Parcelas,Back
+Implementar CRUD de Parcelas,"Criar operações para criação, consulta, edição e encerramento de parcelas.",Amostras e Parcelas,Back
+Implementar regras de status,Controlar estados de amostra e parcela e impedir operações incompatíveis com cada estado.,Amostras e Parcelas,Back
+Integrar listagem de Amostras,Conectar tela de amostras à API e carregar dados reais.,Amostras e Parcelas,Integração
+Integrar criação/edição de Amostra,Conectar formulário de amostra ao backend.,Amostras e Parcelas,Integração
+Integrar Parcela/Coleta,Conectar a tela da parcela aos dados da amostra e parcela selecionadas.,Amostras e Parcelas,Integração
+Criar tela de Cadastro de Árvores,Desenvolver formulário para registro das informações de cada árvore.,Coleta de Árvores,Front
+Criar listagem de Árvores,Exibir árvores cadastradas na parcela e permitir acesso à edição.,Coleta de Árvores,Front
+Criar classificação qualitativa,"Desenvolver interface para classificação da árvore: Normal, Danificada, Doente, Bifurcada e Outros.",Coleta de Árvores,Front
+Criar edição de Árvore,Permitir alteração dos dados enquanto a parcela estiver aberta.,Coleta de Árvores,Front
+Criar estrutura de Árvores,Modelar entidade árvore e relacionamento com parcela.,Coleta de Árvores,Back
+Implementar cadastro e edição de Árvores,Criar operações de persistência dos dados coletados.,Coleta de Árvores,Back
+Implementar validação de dados,"Criar regras de validação para altura, diâmetro e demais campos definidos para a coleta.",Coleta de Árvores,Back
+Implementar regras de parcela aberta/fechada,Permitir alterações somente enquanto a parcela estiver aberta.,Coleta de Árvores,Back
+Implementar classificação qualitativa,Persistir e validar a classificação qualitativa atribuída à árvore.,Coleta de Árvores,Back
+Integrar cadastro de Árvores,Conectar formulário de cadastro ao backend.,Coleta de Árvores,Integração
+Integrar edição de Árvores,Conectar edição aos dados persistidos.,Coleta de Árvores,Integração
+Integrar classificação qualitativa,Enviar e recuperar a classificação da árvore pela API.,Coleta de Árvores,Integração
+Criar tela Configurar Processamento,"Desenvolver interface para seleção da equação, inserção dos coeficientes e método de amostragem.",Processamento e Cálculos,Front
+Criar tela de Resultados,Exibir resultados calculados do inventário e indicadores estatísticos.,Processamento e Cálculos,Front
+Criar visualização de processamento,Exibir estados de processamento e possíveis erros ao usuário.,Processamento e Cálculos,Front
+Criar estrutura de Equações,Modelar equações volumétricas e seus respectivos coeficientes/configurações.,Processamento e Cálculos,Back
+Implementar cálculo de volume por árvore,"Calcular volume individual utilizando diâmetro, altura, equação e coeficientes.",Processamento e Cálculos,Back
+Implementar cálculo de volume por parcela,Agregar os volumes individuais das árvores da parcela.,Processamento e Cálculos,Back
+Implementar cálculo de volume por amostra,Agregar os resultados das parcelas pertencentes à amostra.,Processamento e Cálculos,Back
+Implementar extrapolação para volume/ha,Calcular o volume por hectare conforme a metodologia de amostragem definida.,Processamento e Cálculos,Back
+Criar StatisticsService,"Implementar funções para média, variância e desvio padrão.",Processamento e Cálculos,Back
+Implementar erro amostral,Implementar cálculo do erro amostral conforme metodologia definida para o projeto.,Processamento e Cálculos,Back
+Implementar intervalo de confiança,Implementar cálculo do intervalo de confiança conforme metodologia definida.,Processamento e Cálculos,Back
+Implementar pipeline de processamento,Orquestrar o fluxo Árvore → Validação → Volume → Parcela → Amostra → Hectare → Estatística → Resultado.,Processamento e Cálculos,Back
+Integrar configuração de processamento,"Enviar equação, coeficientes e método de amostragem selecionados pelo usuário.",Processamento e Cálculos,Integração
+Integrar processamento,Acionar processamento do inventário e tratar estados de sucesso/erro.,Processamento e Cálculos,Integração
+Integrar resultados,Consumir API de resultados e alimentar a tela de resultados.,Processamento e Cálculos,Integração
+Criar Dashboard de Resultados,Desenvolver dashboard com os principais indicadores do inventário.,Análise e Relatórios,Front
+Criar cards de indicadores,"Exibir volume m³/ha, volume médio, número de árvores, variância, desvio padrão, erro amostral e intervalo de confiança.",Análise e Relatórios,Front
+Criar gráfico de volume por parcela,Desenvolver visualização comparativa do volume obtido em cada parcela.,Análise e Relatórios,Front
+Criar visualização da análise qualitativa,Apresentar distribuição das classificações qualitativas das árvores.,Análise e Relatórios,Front
+Criar tela de Relatório,Desenvolver interface para visualização e geração do relatório do inventário.,Análise e Relatórios,Front
+Criar endpoint de resultados,Disponibilizar resultados processados para consumo pelo frontend.,Análise e Relatórios,Back
+Implementar agregação dos indicadores,Organizar os resultados calculados em estrutura adequada para o dashboard.,Análise e Relatórios,Back
+Implementar geração de relatório,Criar serviço para geração do relatório conforme formato definido para o MVP.,Análise e Relatórios,Back
+Integrar Dashboard,Conectar indicadores e gráficos aos resultados reais do backend.,Análise e Relatórios,Integração
+Integrar geração de Relatório,Conectar ação de geração do relatório ao serviço backend.,Análise e Relatórios,Integração
+Criar tela de Administração,"Desenvolver área administrativa com abas de Usuários, Equações, Validações e Auditoria.",Administração,Front
+Criar gestão de Usuários,"Desenvolver interfaces de criação, edição e consulta de usuários.",Administração,Front
+Criar gestão de Equações,Desenvolver interface para configuração das equações e coeficientes.,Administração,Front
+Criar gestão de Validações,Desenvolver interface para configuração dos limites de altura e diâmetro.,Administração,Front
+Criar tela de Auditoria,Exibir registros de alterações com valores anteriores e novos valores.,Administração,Front
+Implementar CRUD administrativo de Usuários,Disponibilizar operações administrativas para gerenciamento de usuários.,Administração,Back
+Implementar CRUD de Equações,Criar operações para cadastrar e alterar equações e coeficientes.,Administração,Back
+Implementar configuração de Validações,Permitir configurar os limites utilizados nas validações de coleta.,Administração,Back
+Implementar Auditoria,"Registrar ações relevantes, incluindo alterações de dados com valores anterior e posterior.",Administração,Back
+Implementar regras de acesso administrativo,Restringir funcionalidades administrativas aos usuários autorizados.,Administração,Back
+Integrar gestão de Usuários,Conectar interfaces administrativas à API de usuários.,Administração,Integração
+Integrar gestão de Equações,Conectar configuração das equações ao backend.,Administração,Integração
+Integrar gestão de Validações,Conectar configuração dos limites de validação ao backend.,Administração,Integração
+Integrar Auditoria,Consumir registros de auditoria e exibi-los na interface administrativa.,Administração,Integração
